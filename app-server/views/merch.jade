@@ -1,44 +1,49 @@
-extends layout
-
-block content
-  .row.page-header
-    .col-lg-12
-      h1 Veg
-  .row
-    .col-xs-12.col-md-9
-      .row
-        .col-xs-12.col-sm-6
+doctype html
+html
+  head
+    meta(name='viewport',content='width=device-width,initial-scale=1.0')
+    title= title
+    link(rel='stylesheet',href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+   .navbar.navbar-default.navbar-fixed-top
+      .container
+        .navbar-header-custom
+          style
+            height: 100px
           
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Classic Polo Diectors Name Tshirts 
-               span.badge.pull-right.badge-default Rs.300
-            .panel-body
-            img(src="images/M1.jpg", alt="tiramisu", style="width: 100%; height: auto;")
-              p Indulge in layers of coffee-soaked ladyfingers and velvety mascarpone cheese, delicately dusted with cocoa powder. Our Classic Tiramisu is a timeless Italian dessert that combines rich flavors and a light, creamy texture for a delightful after-meal treat.
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Gulab Jamun 
-               span.badge.pull-right.badge-default Rs.400
-            .panel-body
-              img(src="images/M1.jpg", alt="jamun", style="width: 100%; height: auto;")
-              p Gulab Jamun is a delectable Indian dessert featuring golden, syrup-soaked dough balls with a delightful blend of sweetness and aromatic flavors, often served on special occasions and celebrations.
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='/') F&F MERCH
+        #navbar.navbar-collapse.collapse
+          ul.nav.navbar-nav
+           li.active
+            a(href='nw') TSHIRTS
+           li.active
+            a(href='mh') MENS
+           li.active
+            a(href='wp') WOMEN
+           li.active
+            a(href='cv') SHOES
+          ul.nav.navbar-nav.navbar-right
+           li.active
+            a(href='/register')           SIGN UP
+           li.active
+            a(href='/signin')             LOGIN
+    block content
+     body(style="background-color: rgba(0, 0, 0, 0.5);background-image: url(images/box.gif); background-repeat:no-repeat; background-size:1650px 1520px")
 
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Raspberry White Chocolate Cheesecake
-               span.badge.pull-right.badge-default Rs.400
-            .panel-body
-              img(src="images/rasberry.jpeg", alt="cheesecake", style="width: 100%; height: auto;")
-              p Delight in the harmonious pairing of tangy raspberries and smooth white chocolate in our Cheesecake. The velvety cheesecake sits atop a buttery graham cracker crust, creating a dessert that's both visually appealing and delectably flavorful.
-              
-          .panel.panel-primary
-            .panel-heading
-              h2.panel-title Molten Chocolate Lava Cake
-               span.badge.pull-right.badge-default Rs.400
-            .panel-body
-              img(src="images/chocolava.jpeg", alt="chocolava", style="width: 100%; height: auto;")
-              p A decadent dessert experience awaits with our Molten Chocolate Lava Cake. As you cut into the warm cake, a luscious river of molten chocolate flows, complementing the moist chocolate cake exterior. Served with a scoop of vanilla ice cream for an extra touch of sweetness.
-        .col-xs-12.col-sm-4
-           p.lead
-             | abc 
+               h1
+                 br 
+                 br
+                 br
+                 text-align: center WElCOME TO F&F MERCH 
+                h2
+                text-align: center We wil be opening this soon.
+                
+  script(src='/javascripts/jquery-1.11.1.min.js')
+   script(src='/javascripts/js/bootstrap.min.js')

@@ -1,41 +1,49 @@
 extends layout
 
-body(style="background-image: url(images/M1.jpg);" )
 block content
-  body(style="background-image: url(images/box.gif); background-repeat:no-repeat; background-size:1650px 1520px")
     #banner.page-header
-      .row
-        .col-lg-50
-          h1
-            | HELLO CINEPHILES ! WELCOME TO FRIENDS & FLIX....
-            small  Gathering all cinephile in platform...
-      
-        p.lead
-          | Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.
+        style
+            background-color: #333
+        .row
+            .col-lg-5.text-center
+                h1
+                    | HELLO CINEPHILES! WELCOME TO FLIX&FRIENDS ......
+                p.lead
+                    | Gathering all cinephiles in one platform...
+    
     #about.page-section
-      .row
-        .col-lg-12
-          h2 Meet the Team
-          p Friends & Flix is a platform created by passionate cinephiles who want to share their love for movies with other like-minded people. We believe that watching movies is more than just entertainment, it's a way of connecting, learning, and exploring new perspectives. That's why we created Friends & Flix, a place where you can find and join movie clubs, chat with other movie lovers, and discover new films to watch.
-        .col-lg-6.col-md-6.col-sm-12
-          .card.team-card
-            img.card-img-top(src="images/founder.jpg", alt="Founder")
-            .card-body(style="background-color:	 #476b6b ; color: white;")
-              h3.card-title John Doe
-              h4.card-subtitle Founder and CEO
-              p.card-text John is the visionary behind Friends & Flix. He has been a movie buff since he was a kid, and he always dreamed of creating a community where people can share their passion for cinema. He is responsible for the overall direction and strategy of the platform, as well as leading the development team.
-            .card-footer.social-icons
-              a(href="#") <i class="fa fa-facebook"></i>
-              a(href="#") <i class="fa fa-twitter"></i>
-              a(href="#") <i class="fa fa-linkedin"></i>
-        .col-lg-6.col-md-6.col-sm-12
-          .card.team-card
-            img.card-img-top(src="images/cofounder.jpg", alt="Co-founder")
-            .card-body(style="background-color: black; color: white;")
-              h3.card-title Jane Doe
-              h4.card-subtitle Co-founder and CMO
-              p.card-text Jane is the co-founder and chief marketing officer of Friends & Flix. She is an avid movie fan who loves to explore different genres and cultures through films. She is in charge of the marketing and branding of the platform, as well as managing the content and community team.
-            .card-footer.social-icons
-              a(href="#") <i class="fa fa-facebook"></i>
-              a(href="#") <i class="fa fa-twitter"></i>
-              a(href="#") <i class="fa fa-linkedin"></i>
+        .row
+            .col-lg-6.col-md-6.col-sm-12
+                .card.team-card.mx-auto
+                    h1.card-title What is F&F?
+                    .card-body(style="background-color:red; color: white;", class="img-thumbnail img-fluid m-x-auto")
+                        h7.card-text Friends & Flix is a platform created by passionate cinephiles who want to share their love for movies with other like-minded people. We believe that watching movies is more than just entertainment, it's a way of connecting, learning, and exploring new perspectives. That's why we created Friends & Flix, a place where you can find and join movie clubs, chat with other movie lovers, and discover new films to watch.
+                br                
+                img.card-img-top(src="images/min.gif", alt="Co-founder", class="img-thumbnail img-fluid m-x-auto d-block", width="350px")
+                .card-footer.social-icons
+    
+            .col-lg-6.col-md-6.col-sm-12
+                .card.team-card.mx-auto
+                    h1.card-title Strength of F&F!
+                    .card-body(style="background-color: red; color: white;", class="img-thumbnail img-fluid m-x-auto")
+                        h4.card-text From a regular movie community to an all-encompassing platform, we have grown to this point, connecting people from all around. We continue to grow and watch! And there are many more surprises to come!
+                br
+                img.card-img-top(src="images/gp.jpg", alt="Co-founder", class="img-thumbnail img-fluid m-x-auto d-block", width="350px")
+
+        .row
+            .col-lg-6.col-md-6.col-sm-12
+                .card.team-card.mx-auto
+                    h1.card-title CONTACT US
+                    .card-body(style="background-color: maroon; color: white;", class="img-thumbnail img-fluid m-x-auto")
+                        h7.card-text CALL US AT ANYTIME, BUT NOT WHILE WATCHING A MOVIE....
+                br
+                img.card-img-top(src="images/call.gif", alt="Co-founder", class="img-thumbnail img-fluid m-x-auto d-block", width="350px")
+
+            .col-lg-6.col-md-6.col-sm-12
+                .card.team-card.mx-auto
+                    h1.card-title Join us to combine hands with your favorite booking site ...............
+                    .card-body(style="background-color: maroon; color: white;", class="img-thumbnail img-fluid m-x-auto")
+                        h7.card-text Wait for the biggest upcoming event, keep following us
+                        a(href="#") @f&f-insta
+                br
+                img.card-img-top(src="images/in.png", alt="Co-founder", class="img-thumbnail img-fluid m-x-auto d-block", width="350px")

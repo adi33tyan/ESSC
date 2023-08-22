@@ -8,7 +8,10 @@ html
   body
    .navbar.navbar-default.navbar-fixed-top
       .container
-        .navbar-header 
+        .navbar-header-custom
+          style
+            height: 100px
+          
           button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
             span.sr-only Toggle navigation
             span.icon-bar
@@ -18,18 +21,19 @@ html
           a.navbar-brand(href='/') F&F
         #navbar.navbar-collapse.collapse
           ul.nav.navbar-nav
-            li
-              a(href='nw') NEWZ 
-            li
-              a(href='mh') MERCH 
-            li
-              a(href='wp') WATCH PARTY 
-            li
-              a(href='cv') CINEVERSE 
-            li
-              a(href='/signin') Sign In
-            li.active
-              a(href='/register') Register
+           li.active
+            a(href='nw') NEWZ
+           li.active
+            a(href='mh') MERCH
+           li.active
+            a(href='wp') WATCH PARTY
+           li.active
+            a(href='cv') CINEVERSE
+          ul.nav.navbar-nav.navbar-right
+           li.active
+            a(href='/register')           SIGN UP
+           li.active
+            a(href='/signin')             LOGIN
     block content
   script(src='/javascripts/jquery-1.11.1.min.js')
    script(src='/javascripts/js/bootstrap.min.js')

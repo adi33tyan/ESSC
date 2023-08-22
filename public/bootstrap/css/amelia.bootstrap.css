@@ -75,10 +75,6 @@ strong {
   font-weight: bold;
 }
 
-dfn {
-  font-style: italic;
-}
-
 hr {
   height: 0;
   -moz-box-sizing: content-box;
