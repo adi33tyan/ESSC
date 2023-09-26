@@ -8,12 +8,7 @@ const newsSchema = new mongoose.Schema({
   content: {
     type: String,
     required: true
-  },
-  author: String,
-  publishedOn: {
-    type: Date,
-    default: Date.now
   }
 });
 
-mongoose.model('News', newsSchema);
+mongoose.model('news', newsSchema);
