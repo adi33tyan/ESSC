@@ -1,6 +1,6 @@
 /*news page*/
 module.exports.nw = function(req, res){
-  res.render('news', { title: 'nw' });
+  res.render('courses', { title: 'nw' });
 };
 module.exports.mh = function(req, res){
   res.render('merch', { title: 'mh' });

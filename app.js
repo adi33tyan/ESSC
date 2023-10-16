@@ -1,20 +1,20 @@
-
+require('./app-api/models/db');
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-require('./app-server/models/db');
+
 
 var indexRouter = require('./app-server/routes/index');
 var usersRouter = require('./app-server/routes/users');
-//var routesApi = require('./app-api/routes/index');
+var routesApi = require('./app-api/routes/index');
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname,'app-server', 'views'));
 app.set('view engine', 'jade');
-//app.use('/api', routesApi);
+app.use('/api', routesApi);
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
